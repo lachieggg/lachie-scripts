@@ -2,6 +2,7 @@
 *.pem
 *.key
 *.crt
+*.gpg
 
 # Mac OS
 .DS_Store
