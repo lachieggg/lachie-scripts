@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Set directory
-cd ..
-
 # Cleanup
 bash cleanup.sh
 
