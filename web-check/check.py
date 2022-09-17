@@ -3,6 +3,8 @@
 import requests
 import time
 
+DELAY = 5
+EXPECTED_CODE = 200
 SITE = "http://lachiegrant.io"
 
 def check_site(running=True):
@@ -11,9 +13,9 @@ def check_site(running=True):
 		session = requests.Session()
 		session.verify = False
 		r = session.get(url=SITE)
-		if(r.status_code == 200): print("200 OK")
+		if(r.status_code == EXPECTED_CODE): print("200 OK")
 		else: print(r.status_code)
-		time.sleep(5)
+		time.sleep(DELAY)
 
 
 if(__name__ == "__main__"):
